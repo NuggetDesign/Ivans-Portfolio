@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400&family=Poppins:wght@300;600;700&display=swap");
+.bold {
+  font-family: 'Poppins', Sans-Serif;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.semi-bold {
+  font-family: 'Poppins', Sans-Serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.poppins-light {
+  font-family: 'Poppins', Sans-Serif;
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.regular {
+  font-family: 'Hind Siliguri', Sans-Serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.hind-siliguri-light {
+  font-family: 'Hind Siliguri', Sans-Serif;
+  font-weight: 300;
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sub-title {
+  font-size: 24px;
+}
+
+.sub-desc {
+  font-size: 20px;
+}
+
+body {
+  background: #100F21;
+  margin: 0;
+  color: white;
+}
+
+.navbar {
+  padding: 3em 1em;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 32px;
+}
+
+.navbar .logo img {
+  padding-right: .5em;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+  width: 32px;
+}
+
+.hero {
+  padding: 5em 1em;
+}
+
+.hero .mobile-hero-img {
+  display: block;
+  margin: auto;
+}
+
+.hero .left-col {
+  color: white;
+  text-align: center;
+}
+
+.hero .left-col h1 {
+  font-size: 37px;
+  padding: 1em 2em 0em;
+  line-height: 40px;
+}
+
+.hero .left-col h1 span {
+  color: #FFE5AC;
+}
+
+.hero .left-col p {
+  font-size: 16px;
+  color: #CECED5;
+  padding: 0em 4em 1em;
+  margin-top: -1em;
+  line-height: 21px;
+}
+
+.hero .hero-cta {
+  background-color: #FFE5AC;
+  font-size: 14px;
+  padding: .7em 0em;
+  display: block;
+  margin: auto;
+  width: 200px;
+  color: black;
+}
+
+.hero .hero-img {
+  display: none;
+}
+
+.about {
+  padding: 1em;
+}
+
+.about h1 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.about p {
+  font-size: 20px;
+  line-height: 26px;
+  color: #9E9EAF;
+}
+/*# sourceMappingURL=main.css.map */
