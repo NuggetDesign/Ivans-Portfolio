@@ -218,7 +218,8 @@ body {
   -webkit-box-shadow: -30px 30px #546A7B;
           box-shadow: -30px 30px #546A7B;
   display: block;
-  margin: 2em auto 6em auto;
+  margin: 2em 0px 6em 37px;
+  padding: auto;
 }
 
 .latest-work-card ul {
