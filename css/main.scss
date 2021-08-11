@@ -132,7 +132,7 @@ html, body {
             }
         }
 
-        p {
+        .hero-desc {
             font-size: 16px;
             color: #CECED5;
             padding: 0em 4em 1em;
@@ -141,14 +141,22 @@ html, body {
         }
     }
 
-    .hero-cta {
-        background-color: #FFE5AC;
-        font-size: 14px;
-        padding: .7em 0em;
-        display: block;
-        margin: auto;
-        width: 200px;
-        color: black;
+    .cta-box {
+        display: inline-block;
+        place-content: center;
+
+        .hero-cta {
+            background-color: #FFE5AC;
+            font-size: 14px;
+            padding: .7em 0em;
+            display: block;
+            width: 200px;
+            color: black;
+        }
+
+        .hero-about {
+            display: none;
+        }
     }
 
     .hero-img {
@@ -471,3 +479,4 @@ nav {
     margin: .5em;
     cursor: pointer;
 }
+
