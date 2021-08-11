@@ -214,11 +214,11 @@ body {
 }
 
 .latest-work-card .latest-img {
-  width: 90%;
+  width: 80%;
   -webkit-box-shadow: -30px 30px #546A7B;
           box-shadow: -30px 30px #546A7B;
   display: block;
-  margin: 2em 0px 6em 37px;
+  margin: 2em auto 6em auto;
 }
 
 .latest-work-card ul {
