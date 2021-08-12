@@ -148,7 +148,7 @@ html, body {
         .hero-cta {
             background-color: #FFE5AC;
             font-size: 14px;
-            padding: .7em 0em;
+            padding: 2em 0em;
             display: block;
             width: 200px;
             color: black;
@@ -166,6 +166,7 @@ html, body {
 
 .about {
     padding: 1em;
+    background-color: #141429;
 
     h1 {
         font-size: 24px;
@@ -480,3 +481,87 @@ nav {
     cursor: pointer;
 }
 
+@media only screen and (min-width: 1080px) {
+
+    .navbar {
+        margin: 1em 3em;
+
+        .logo {
+
+            img {
+                padding-right: .3em;
+            }
+        }
+    }
+
+    .hero .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0em 3em 6em;
+
+        .left-col {
+            text-align: left;
+            padding-right: 2em;
+
+            h1 {
+                padding: 0;
+                font-size: 50px;
+                line-height: 60px;
+            }
+    
+            .hero-desc {
+                padding: 0px 6em 0px 0px;
+
+            }
+        }
+
+        .mobile-hero-img {
+            display: none;
+        }
+
+        .hero-img, .hero-about {
+            display: unset;
+        }
+
+        .hero-img {
+            width: 700px;
+        }
+
+        .cta-box {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            margin-top: 3em;
+
+            .hero-cta-box {
+                margin-right: 2em;
+            }
+
+            .hero-cta {
+                text-align: center;
+                padding: 1.5em 0em;
+            }
+
+            .hero-about {
+                color: #91919E;
+                font-size: 16px;
+            }
+            
+        }
+    }
+
+    .about .container {
+        display: flex;
+        align-items: center;
+        padding: 0em 3em;
+        margin: 2em 0em;
+
+        h1 {
+            font-size: 30px;
+            line-height: 40px;
+            padding-right: 2em;
+        }
+    }
+
+}

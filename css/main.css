@@ -154,7 +154,7 @@ html, body {
 .hero .cta-box .hero-cta {
   background-color: #FFE5AC;
   font-size: 14px;
-  padding: .7em 0em;
+  padding: 2em 0em;
   display: block;
   width: 200px;
   color: black;
@@ -170,6 +170,7 @@ html, body {
 
 .about {
   padding: 1em;
+  background-color: #141429;
 }
 
 .about h1 {
@@ -504,5 +505,85 @@ nav li a:hover {
   float: right;
   margin: .5em;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 1080px) {
+  .navbar {
+    margin: 1em 3em;
+  }
+  .navbar .logo img {
+    padding-right: .3em;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0em 3em 6em;
+  }
+  .hero .container .left-col {
+    text-align: left;
+    padding-right: 2em;
+  }
+  .hero .container .left-col h1 {
+    padding: 0;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .hero .container .left-col .hero-desc {
+    padding: 0px 6em 0px 0px;
+  }
+  .hero .container .mobile-hero-img {
+    display: none;
+  }
+  .hero .container .hero-img, .hero .container .hero-about {
+    display: unset;
+  }
+  .hero .container .hero-img {
+    width: 700px;
+  }
+  .hero .container .cta-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-top: 3em;
+  }
+  .hero .container .cta-box .hero-cta-box {
+    margin-right: 2em;
+  }
+  .hero .container .cta-box .hero-cta {
+    text-align: center;
+    padding: 1.5em 0em;
+  }
+  .hero .container .cta-box .hero-about {
+    color: #91919E;
+    font-size: 16px;
+  }
+  .about .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0em 3em;
+    margin: 2em 0em;
+  }
+  .about .container h1 {
+    font-size: 30px;
+    line-height: 40px;
+    padding-right: 2em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
