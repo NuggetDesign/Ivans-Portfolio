@@ -67,7 +67,7 @@ html, body {
 }
 
 .navbar .logo img {
-  padding-right: .5em;
+  padding-right: .1em;
 }
 
 .navbar nav {
@@ -243,6 +243,10 @@ html, body {
   margin-bottom: 10em;
 }
 
+.latest-work-card #latest-img-desktop {
+  display: none;
+}
+
 .latest-work-card .sub-desc {
   font-size: 20px;
   color: #CECED5;
@@ -259,8 +263,7 @@ html, body {
   -webkit-box-shadow: -30px 30px #546A7B;
           box-shadow: -30px 30px #546A7B;
   display: block;
-  margin: 2em 0px 6em 37px;
-  padding: auto;
+  margin: 5em auto 6em auto;
 }
 
 .latest-work-card ul {
