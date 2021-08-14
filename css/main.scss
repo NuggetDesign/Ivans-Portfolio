@@ -338,7 +338,11 @@ html, body {
 }
 
 .reviews {
-    margin: 1em 1em 4em;
+    margin: 1em 0em 4em;
+
+    h1 {
+        margin-left: .3em;
+    }
     
     .card-reviews {
         background-color: #141429;
