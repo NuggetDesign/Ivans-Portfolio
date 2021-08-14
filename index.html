@@ -199,9 +199,10 @@
 
     <section class="reviews">
         <h1 class="bold">Reviews</h1>
+
         <div class="container">
             <div class="slider">
-                <div class="cardtest">
+                <div class="card-reviews">
                     <img class="person" src="images/review-character.svg" alt="Reviewer"><br>
                     <img class="quotation" src="images/quotation-marks.svg" alt="Quotation Marks">
                     <p class="semi-bold">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
@@ -212,7 +213,7 @@
                     </div>
                 </div>
 
-                <div class="cardtest">
+                <div class="card-reviews">
                     <img class="person" src="images/review-character.svg" alt="Reviewer"><br>
                     <img class="quotation" src="images/quotation-marks.svg" alt="Quotation Marks">
                     <p class="semi-bold">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
@@ -224,6 +225,7 @@
                 </div>
             </div>
         </div>
+
         <button class="prev slick-arrow"> < </button>
         <button class="next slick-arrow"> > </button>
     </section>
@@ -297,6 +299,17 @@
     slidesToScroll: 1,
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false,
+      }
+    },
+    ]
 });
     </script>
 </body>
