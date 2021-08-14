@@ -78,23 +78,27 @@ html, body {
         }
 
     }
+    
+    .primary-nav {
+        margin-top: 8em;
+    }
 
     .secondary-nav {
         display: flex;
         float: right;
         align-items: center;
-        margin-top: 5em;
+        margin-top: 3em;
 
         .twitter {
-            width: 50px;
+            width: 35px;
         }
 
         .instagram {
-            width: 45px;
+            width: 30px;
         }
 
         .behance {
-            width: 65px;
+            width: 50px;
         }
     }
 
