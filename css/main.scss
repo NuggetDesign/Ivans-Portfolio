@@ -509,6 +509,53 @@ nav {
     cursor: pointer;
 }
 
+@media only screen and (min-width: 768px) {
+
+    .about {
+        padding: 2em 3em;
+    }
+
+    .my-services {
+
+        ul {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .card {
+            margin: .5em;
+        }
+    }
+
+    .why-me {
+
+        .sub-desc {
+            margin-top: 2em;
+        }
+
+        .numbers {
+            margin: 0em 4em;
+        }
+    }
+
+    .reviews {
+
+        .card-reviews {
+            margin: 2em 6em;
+            padding: 4em;
+        }
+    }
+
+    .footer {
+        padding: 2em 3em 6em; 
+
+        .columns {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+    }
+}
+
 @media only screen and (min-width: 1080px) {
 
     .navbar {

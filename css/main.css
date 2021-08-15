@@ -535,6 +535,40 @@ nav li a:hover {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 768px) {
+  .about {
+    padding: 2em 3em;
+  }
+  .my-services ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .my-services .card {
+    margin: .5em;
+  }
+  .why-me .sub-desc {
+    margin-top: 2em;
+  }
+  .why-me .numbers {
+    margin: 0em 4em;
+  }
+  .reviews .card-reviews {
+    margin: 2em 6em;
+    padding: 4em;
+  }
+  .footer {
+    padding: 2em 3em 6em;
+  }
+  .footer .columns {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+}
+
 @media only screen and (min-width: 1080px) {
   .navbar {
     margin: 1em 3em;
