@@ -240,8 +240,25 @@ html, body {
   padding: 1em;
 }
 
-.latest-work .desktop-view {
-  display: none;
+.latest-work .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  place-content: space-between;
+}
+
+.latest-work .title h1 {
+  margin: 2em 0em 0em;
+}
+
+.latest-work .title .desktop-view {
+  display: unset;
+  font-size: 16px;
+  color: #CECED5;
+  margin-bottom: -1em;
 }
 
 .latest-work-card {
@@ -265,10 +282,25 @@ html, body {
 
 .latest-work-card .latest-img {
   width: 80%;
-  -webkit-box-shadow: -30px 30px #546A7B;
-          box-shadow: -30px 30px #546A7B;
   display: block;
   margin: 5em auto 6em auto;
+  -webkit-box-shadow: -30px 30px #546A7B;
+          box-shadow: -30px 30px #546A7B;
+  -webkit-transition: bottom 1s, left 1s, -webkit-box-shadow 1s;
+  transition: bottom 1s, left 1s, -webkit-box-shadow 1s;
+  transition: box-shadow 1s, bottom 1s, left 1s;
+  transition: box-shadow 1s, bottom 1s, left 1s, -webkit-box-shadow 1s;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.latest-work-card .latest-img:hover {
+  bottom: -30px;
+  left: -30px;
+  -webkit-box-shadow: 0 0 0 -3px #546A7B;
+          box-shadow: 0 0 0 -3px #546A7B;
 }
 
 .latest-work-card ul {
@@ -644,29 +676,17 @@ nav li a:hover {
     line-height: 40px;
     padding-right: 2em;
   }
-  .my-services .card {
-    margin: 1em;
+  .my-services {
+    padding: 1em 3em;
+  }
+  .my-services ul {
+    grid-gap: 2em;
   }
   .latest-work {
     padding: 0em 3em;
   }
-  .latest-work .title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    place-content: space-between;
-  }
-  .latest-work .title h1 {
-    margin: 2em 0em 0em;
-  }
   .latest-work .title .desktop-view {
-    display: unset;
     font-size: 14px;
-    color: #CECED5;
-    margin-bottom: -1em;
   }
   .latest-work .mobile-view {
     display: none;
@@ -679,8 +699,8 @@ nav li a:hover {
     display: grid;
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
-    margin-top: 10em;
-    margin-bottom: 15em;
+    margin-top: 5em;
+    margin-bottom: 10em;
   }
   .latest-work .latest-work-card .right-col {
     margin-left: 1em;
@@ -688,6 +708,39 @@ nav li a:hover {
   .latest-work .latest-work-card .latest-img {
     width: 450px;
     margin: -1em 2em;
+  }
+  .why-me {
+    padding: 3em 3em;
+  }
+  .why-me .why-me-box {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .why-me .why-me-box img {
+    width: 500px;
+  }
+  .why-me .why-me-box .right-col {
+    padding: 0em 3em;
+  }
+  .why-me .num-container {
+    padding: 0em;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  .why-me .num-container .numbers {
+    margin: 0em;
+  }
+  .reviews h1 {
+    margin: 3em 1em 0em;
+  }
+  .reviews .card-reviews {
+    margin: 3em;
   }
 }
 /*# sourceMappingURL=main.css.map */

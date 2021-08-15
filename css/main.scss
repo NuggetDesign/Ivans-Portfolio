@@ -235,8 +235,22 @@ html, body {
 .latest-work {
     padding: 1em;
 
-    .desktop-view {
-        display: none;
+    .title {
+        display: flex;
+        align-items: flex-end;
+        place-content: space-between;
+
+        h1 {
+            margin: 2em 0em 0em;
+        }
+
+        .desktop-view {
+            display: unset;
+            font-size: 16px;
+            color: #CECED5;
+            margin-bottom: -1em;
+    
+        }
     }
 }
 
@@ -260,9 +274,20 @@ html, body {
 
     .latest-img {
         width: 80%;
-        box-shadow: -30px 30px #546A7B;
         display: block;
         margin: 5em auto 6em auto;
+        box-shadow: -30px 30px #546A7B;
+        transition: box-shadow 1s, bottom 1s, left 1s;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        cursor: pointer;
+    }
+
+    .latest-img:hover {
+        bottom: -30px;
+        left: -30px;
+        box-shadow: 0 0 0 -3px #546A7B;
     }
 
     ul {
@@ -636,31 +661,18 @@ nav {
     }
 
     .my-services {
+        padding: 1em 3em;
         
-        .card {
-            margin: 1em;
+        ul {
+            grid-gap: 2em;
         }
     }
 
     .latest-work {
         padding: 0em 3em;
 
-        .title {
-            display: flex;
-            align-items: flex-end;
-            place-content: space-between;
-
-            h1 {
-                margin: 2em 0em 0em;
-            }
-
-            .desktop-view {
-                display: unset;
-                font-size: 14px;
-                color: #CECED5;
-                margin-bottom: -1em;
-        
-            }
+        .title .desktop-view {
+            font-size: 14px;
         }
 
         .mobile-view {
@@ -674,8 +686,8 @@ nav {
         .latest-work-card {
             display: grid;
             grid-template-columns: auto auto;
-            margin-top: 10em;
-            margin-bottom: 15em;
+            margin-top: 5em;
+            margin-bottom: 10em;
 
             .right-col {
                 margin-left: 1em;
@@ -685,6 +697,44 @@ nav {
                 width: 450px;
                 margin: -1em 2em;
             }
+        }
+    }
+
+    .why-me {
+        padding: 3em 3em;
+
+        .why-me-box {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+
+            img {
+                width: 500px;
+            }
+
+            .right-col {
+                padding: 0em 3em;
+            }
+        }
+
+        .num-container {
+            padding: 0em;
+            align-items: left;
+
+            .numbers {
+                margin: 0em;
+            }
+        }
+    }
+
+    .reviews {
+
+        h1 {
+            margin: 3em 1em 0em;
+        }
+        
+        .card-reviews {
+            margin: 3em;
         }
     }
 }
