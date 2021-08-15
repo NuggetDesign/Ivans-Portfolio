@@ -635,4 +635,56 @@ nav {
         }
     }
 
+    .my-services {
+        
+        .card {
+            margin: 1em;
+        }
+    }
+
+    .latest-work {
+        padding: 0em 3em;
+
+        .title {
+            display: flex;
+            align-items: flex-end;
+            place-content: space-between;
+
+            h1 {
+                margin: 2em 0em 0em;
+            }
+
+            .desktop-view {
+                display: unset;
+                font-size: 14px;
+                color: #CECED5;
+                margin-bottom: -1em;
+        
+            }
+        }
+
+        .mobile-view {
+            display: none;
+        }
+
+        #latest-img-desktop {
+            display: unset;
+        }
+
+        .latest-work-card {
+            display: grid;
+            grid-template-columns: auto auto;
+            margin-top: 10em;
+            margin-bottom: 15em;
+
+            .right-col {
+                margin-left: 1em;
+            }
+
+            .latest-img {
+                width: 450px;
+                margin: -1em 2em;
+            }
+        }
+    }
 }
