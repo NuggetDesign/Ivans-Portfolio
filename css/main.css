@@ -82,6 +82,10 @@ html, body {
   margin-top: 8em;
 }
 
+.navbar .primary-nav .current {
+  font-size: 10px;
+}
+
 .navbar .secondary-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -714,6 +718,15 @@ nav li a:hover {
             justify-content: right;
     place-content: right;
   }
+  .latest-work .latest-work-card .ul-middle {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .latest-work .latest-work-card .ul-middle li {
+    margin-right: 0em;
+    margin-left: 1em;
+  }
   .why-me {
     padding: 3em 3em;
   }
@@ -871,7 +884,7 @@ nav li a:hover {
     font-size: 16px;
     color: #91919E;
   }
-  .navbar nav .current {
+  .navbar nav .primary-nav .current {
     font-weight: 600;
     font-size: 16px;
   }

@@ -81,6 +81,10 @@ html, body {
     
     .primary-nav {
         margin-top: 8em;
+
+        .current {
+            font-size: 10px;
+        }
     }
 
     .secondary-nav {
@@ -700,6 +704,16 @@ nav {
                 justify-content: right;
                 place-content: right;
             }
+
+        }
+
+        .latest-work-card .ul-middle {
+            justify-content: flex-end;
+
+            li {
+                margin-right: 0em;
+                margin-left: 1em;
+            }
         }
     }
 
@@ -872,12 +886,11 @@ nav {
         .primary-nav {
             font-size: 16px;
             color: #91919E;
-        }
 
-        .current {
+            .current {
             font-weight: 600;
             font-size: 16px;
-
+            }
         }
     }
 
