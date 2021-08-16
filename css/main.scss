@@ -683,6 +683,7 @@ nav {
             grid-template-columns: auto auto;
             margin-top: 5em;
             margin-bottom: 10em;
+            align-items: center;
 
             .right-col {
                 margin-left: 1em;
@@ -698,7 +699,6 @@ nav {
                 margin-right: 2em;
                 justify-content: right;
                 place-content: right;
-
             }
         }
     }
