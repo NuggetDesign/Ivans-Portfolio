@@ -277,7 +277,7 @@ html, body {
         display: block;
         margin: 5em auto 6em auto;
         box-shadow: -30px 30px #546A7B;
-        transition: box-shadow 1s, bottom 1s, left 1s;
+        transition: box-shadow .5s, bottom .5s, left .5s;
         position: relative;
         bottom: 0;
         left: 0;
@@ -416,12 +416,6 @@ html, body {
             line-height: 23px;
         }
     }
-
-    .prev, .next {
-        background: #ffcb8f;
-        border: unset;
-        padding: 2em;
-    }
     
     button {
         display: none;
@@ -533,6 +527,7 @@ nav {
     margin: .5em;
     cursor: pointer;
 }
+
 
 @media only screen and (min-width: 768px) {
 
@@ -734,7 +729,118 @@ nav {
         }
         
         .card-reviews {
-            margin: 3em;
+            display: grid;
+            grid-template-columns: 400px auto;
+            margin: 3em 3em 2em;
+            padding: 3em;
+
+            .person {
+                margin-bottom: -3em;
+            }
+
+            .right-col {
+                margin-left: 3em;
+            }
         }
+
+        .button {
+            margin: 0em 3em;
+            text-align: right;
+            display: block;
+
+            .prev, .next {
+                font-size: 18px;
+                border: unset;
+                padding: 1.5em 1.7em;
+                border-radius: 0em;
+                border: .1px solid #77758F;
+                border-width: 1px;
+                color: white;
+                background-color: #100F21;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #ffcb8f;
+                    transition: .4s;
+                    border: unset;
+                    color: black;
+                }
+            }
+
+            .prev {
+                margin-right: .5em;
+            }
+
+        }
+    }
+
+    .footer {
+
+        .container {
+            display: grid;
+            grid-template-columns: 500px auto;
+
+            .columns {
+                margin-right: 2em;
+                padding: 0em;
+
+                .footer-title {
+                    font-size: 18px;
+                    margin-bottom: 1.5em;
+                }
+
+                ul {
+                    padding: 0em;
+                }
+
+                li {
+                    font-size: 18px;
+                    line-height: 3em;
+                }
+
+                span {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: unset;
+        align-items: center;
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul {
+            display: flex;
+        }
+
+        a {
+            color: white;
+            font-size: 1em;
+            padding: .1em 1em;
+        }
+
+        ul.primary-nav {
+            margin: 0;
+        }
+        
     }
 }

@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/62a2056573.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
 
     <title>Ivan's Portfolio</title>
@@ -216,11 +217,11 @@
     
                     <div class="num-container">
                         <div class="numbers num-one">
-                            <h1 class="bold">421</h1>
+                            <h1 class="bold num">312</h1>
                             <p class="poppins-light">Satisfied<br>Clients</p>
                         </div>
                         <div class="numbers num-two">
-                            <h1 class="bold">231</h1>
+                            <h1 class="bold num">121</h1>
                             <p class="poppins-light">Satisfied<br>Clients</p>
                         </div>
                     </div>
@@ -236,7 +237,9 @@
             
             <div class="slider">
                 <div class="card-reviews">
-                    <img class="person" src="images/review-character.svg" alt="Reviewer"><br>
+                    <div class="left-col">
+                        <img class="person" src="images/review-character.svg" alt="Reviewer"><br>
+                    </div>
 
                     <div class="right-col">
                         <img class="quotation" src="images/quotation-marks.svg" alt="Quotation Marks">
@@ -250,7 +253,9 @@
                 </div>
 
                 <div class="card-reviews">
-                    <img class="person" src="images/review-character.svg" alt="Reviewer"><br>
+                    <div class="left-col">
+                        <img class="person" src="images/review-character.svg" alt="Reviewer"><br>
+                    </div>
                     
                     <div class="right-col">
                         <img class="quotation" src="images/quotation-marks.svg" alt="Quotation Marks">
@@ -265,8 +270,14 @@
             </div>
         </div>
 
-        <button class="prev slick-arrow"> < </button>
-        <button class="next slick-arrow"> > </button>
+        <div class="button">
+            <button class="prev slick-arrow">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next slick-arrow">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
     </section>
 
     <section class="footer">
@@ -310,46 +321,11 @@
         </div>
     </section>
 
-    <script>
-
-        const mobileBtn = document.getElementById('mobile-cta')
-              nav = document.querySelector('nav')
-              mobileBtnExit = document.getElementById('mobile-exit');
-
-        mobileBtn.addEventListener('click', () => {
-            nav.classList.add('menu-btn');
-        })
-
-        mobileBtnExit.addEventListener('click', () => {
-            nav.classList.remove('menu-btn');
-        })
-
-    </script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script type="text/javascript">
-        $('.slider').slick({
-    dots: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow: $('.prev'),
-    nextArrow: $('.next'),
-    responsive: [
-    {
-      breakpoint: 1080,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        arrows: false,
-      }
-    },
-    ]
-});
-    </script>
+    <script src="/js/script.js"></script>
 </body>
 </html>

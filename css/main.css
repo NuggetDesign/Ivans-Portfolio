@@ -286,10 +286,10 @@ html, body {
   margin: 5em auto 6em auto;
   -webkit-box-shadow: -30px 30px #546A7B;
           box-shadow: -30px 30px #546A7B;
-  -webkit-transition: bottom 1s, left 1s, -webkit-box-shadow 1s;
-  transition: bottom 1s, left 1s, -webkit-box-shadow 1s;
-  transition: box-shadow 1s, bottom 1s, left 1s;
-  transition: box-shadow 1s, bottom 1s, left 1s, -webkit-box-shadow 1s;
+  -webkit-transition: bottom .5s, left .5s, -webkit-box-shadow .5s;
+  transition: bottom .5s, left .5s, -webkit-box-shadow .5s;
+  transition: box-shadow .5s, bottom .5s, left .5s;
+  transition: box-shadow .5s, bottom .5s, left .5s, -webkit-box-shadow .5s;
   position: relative;
   bottom: 0;
   left: 0;
@@ -454,12 +454,6 @@ html, body {
 .reviews .author p {
   font-size: 18px;
   line-height: 23px;
-}
-
-.reviews .prev, .reviews .next {
-  background: #ffcb8f;
-  border: unset;
-  padding: 2em;
 }
 
 .reviews button {
@@ -740,7 +734,112 @@ nav li a:hover {
     margin: 3em 1em 0em;
   }
   .reviews .card-reviews {
-    margin: 3em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 400px auto;
+        grid-template-columns: 400px auto;
+    margin: 3em 3em 2em;
+    padding: 3em;
+  }
+  .reviews .card-reviews .person {
+    margin-bottom: -3em;
+  }
+  .reviews .card-reviews .right-col {
+    margin-left: 3em;
+  }
+  .reviews .button {
+    margin: 0em 3em;
+    text-align: right;
+    display: block;
+  }
+  .reviews .button .prev, .reviews .button .next {
+    font-size: 18px;
+    border: unset;
+    padding: 1.5em 1.7em;
+    border-radius: 0em;
+    border: .1px solid #77758F;
+    border-width: 1px;
+    color: white;
+    background-color: #100F21;
+    cursor: pointer;
+  }
+  .reviews .button .prev:hover, .reviews .button .next:hover {
+    background-color: #ffcb8f;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: unset;
+    color: black;
+  }
+  .reviews .button .prev {
+    margin-right: .5em;
+  }
+  .footer .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 500px auto;
+        grid-template-columns: 500px auto;
+  }
+  .footer .container .columns {
+    margin-right: 2em;
+    padding: 0em;
+  }
+  .footer .container .columns .footer-title {
+    font-size: 18px;
+    margin-bottom: 1.5em;
+  }
+  .footer .container .columns ul {
+    padding: 0em;
+  }
+  .footer .container .columns li {
+    font-size: 18px;
+    line-height: 3em;
+  }
+  .footer .container .columns span {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: white;
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
