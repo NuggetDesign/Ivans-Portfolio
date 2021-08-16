@@ -70,7 +70,7 @@ html, body {
         }
     }
 
-    nav {
+    nav, .secondary-nav-desktop{
         display: none;
         
         ul {
@@ -692,6 +692,14 @@ nav {
                 width: 450px;
                 margin: -1em 2em;
             }
+
+            .desktop {
+                text-align: right;
+                margin-right: 2em;
+                justify-content: right;
+                place-content: right;
+
+            }
         }
     }
 
@@ -808,6 +816,14 @@ nav {
 
 @media only screen and (min-width: 1440px) {
 
+    .container, .button {
+        padding: 0em 4em;
+    }
+
+    .about {
+        padding: 2em 4em;
+    }
+
     .mobile-menu, .mobile-menu-exit {
         display: none;
     }
@@ -815,18 +831,29 @@ nav {
     .navbar .container {
         display: grid;
         grid-template-columns: auto auto auto;
-        justify-content: unset;
         align-items: center;
+
+        .secondary-nav {
+            display: none;
+        }
+
+        .secondary-nav-desktop {
+            display: unset;
+            font-size: 8px;
+            align-items: center;
+            background-color: #ffcb8f;
+            color: black;
+            padding: .5em 6em;
+        }
     }
 
     .navbar nav {
         display: flex;
-        justify-content: space-between;
         background: none;
         position: unset;
         height: auto;
-        width: 100%;
         padding: 0;
+        align-items: center;
 
         ul {
             display: flex;
@@ -842,5 +869,110 @@ nav {
             margin: 0;
         }
         
+        .primary-nav {
+            font-size: 16px;
+            color: #91919E;
+        }
+
+        .current {
+            font-weight: 600;
+            font-size: 16px;
+
+        }
     }
+
+    .my-services {
+
+        ul {
+            grid-template-columns: auto auto auto;
+        }
+
+        .card {
+            margin: .1em;
+            padding: 3em;
+        }
+
+        .web-development img{
+            margin-top: 2em;
+        }
+
+        .plugin-development img{
+            margin-top: 1em;
+        }
+    }
+
+    .latest-work {
+
+        .latest-work-card {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+    
+            .latest-img {
+                width: 600px;
+            }
+        }
+
+        .right-col, .left-col {
+
+            ul {
+                margin-bottom: 5em;
+            }
+        }
+    }
+
+    .why-me {
+
+        .num-container {
+            display: flex;
+            place-content: unset;
+
+            .num-one {
+                margin-right: 2em;
+            }
+        }
+    }
+
+    .reviews {
+
+        .card-reviews {
+            grid-template-columns: 500px auto;
+        }
+
+        .right-col .semi-bold{
+            font-size: 35px;
+            line-height: 47px;
+        }
+
+        .author p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    .footer {
+        padding: 6em 4em 6em;
+
+        .container {
+            grid-template-columns: 650px auto;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1450px) {
+
+    .container, .button, .hero .container, .about .container, .why-me .container, .footer .container {
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 10em 4em;
+    }
+
+    .about {
+        padding: 2em 4em;
+    }
+
 }

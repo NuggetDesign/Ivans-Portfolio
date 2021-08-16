@@ -70,11 +70,11 @@ html, body {
   padding-right: .1em;
 }
 
-.navbar nav {
+.navbar nav, .navbar .secondary-nav-desktop {
   display: none;
 }
 
-.navbar nav ul {
+.navbar nav ul, .navbar .secondary-nav-desktop ul {
   list-style: none;
 }
 
@@ -703,6 +703,14 @@ nav li a:hover {
     width: 450px;
     margin: -1em 2em;
   }
+  .latest-work .latest-work-card .desktop {
+    text-align: right;
+    margin-right: 2em;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    place-content: right;
+  }
   .why-me {
     padding: 3em 3em;
   }
@@ -800,6 +808,12 @@ nav li a:hover {
 }
 
 @media only screen and (min-width: 1440px) {
+  .container, .button {
+    padding: 0em 4em;
+  }
+  .about {
+    padding: 2em 4em;
+  }
   .mobile-menu, .mobile-menu-exit {
     display: none;
   }
@@ -808,25 +822,34 @@ nav li a:hover {
     display: grid;
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
-    -webkit-box-pack: unset;
-        -ms-flex-pack: unset;
-            justify-content: unset;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .navbar .container .secondary-nav {
+    display: none;
+  }
+  .navbar .container .secondary-nav-desktop {
+    display: unset;
+    font-size: 8px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #ffcb8f;
+    color: black;
+    padding: .5em 6em;
   }
   .navbar nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     background: none;
     position: unset;
     height: auto;
-    width: 100%;
     padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .navbar nav ul {
     display: -webkit-box;
@@ -840,6 +863,84 @@ nav li a:hover {
   }
   .navbar nav ul.primary-nav {
     margin: 0;
+  }
+  .navbar nav .primary-nav {
+    font-size: 16px;
+    color: #91919E;
+  }
+  .navbar nav .current {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .my-services ul {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  .my-services .card {
+    margin: .1em;
+    padding: 3em;
+  }
+  .my-services .web-development img {
+    margin-top: 2em;
+  }
+  .my-services .plugin-development img {
+    margin-top: 1em;
+  }
+  .latest-work .latest-work-card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .latest-work .latest-work-card .latest-img {
+    width: 600px;
+  }
+  .latest-work .right-col ul, .latest-work .left-col ul {
+    margin-bottom: 5em;
+  }
+  .why-me .num-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: unset;
+  }
+  .why-me .num-container .num-one {
+    margin-right: 2em;
+  }
+  .reviews .card-reviews {
+    -ms-grid-columns: 500px auto;
+        grid-template-columns: 500px auto;
+  }
+  .reviews .right-col .semi-bold {
+    font-size: 35px;
+    line-height: 47px;
+  }
+  .reviews .author p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .footer {
+    padding: 6em 4em 6em;
+  }
+  .footer .container {
+    -ms-grid-columns: 650px auto;
+        grid-template-columns: 650px auto;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  .container, .button, .hero .container, .about .container, .why-me .container, .footer .container {
+    width: 1440px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 10em 4em;
+  }
+  .about {
+    padding: 2em 4em;
   }
 }
 /*# sourceMappingURL=main.css.map */
